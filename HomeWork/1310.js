@@ -4,19 +4,28 @@
 // принимает целое число(например 5025) и возвращает сумму его цифр
 // (в данном примере возвращаемое из функции значение будет 12).
 //
-
+//
+//  Мой вариант
+//
 let getDigitsSum = function (digit) {
-  let str = String(digit);
-  let arr = Array.from(str);
+  let numStr = String(digit);
   let result = 0;
   // let array;
-  for (let i = 0; i < arr.length; i++) {
-    result = result + Number(arr[i]);
+  for (let i = 0; i < numStr.length; i++) {
+    result += Number(numStr[i]);
   }
   return result;
 };
+//
+//  Вариант на уроке
+//
+for (let j = 0; j <= 2022; j++) {
+  if (getDigitsSum(j) === 13) {
+    console.log(i);
+  }
+}
 
-console.log('--- 1 ---');
-console.log(getDigitsSum(5025));
-console.log(getDigitsSum(22222));
-console.log(getDigitsSum(1111111111));
+console.log('--- Result ---');
+console.log(getDigitsSum1(5025));
+console.log(getDigitsSum1(2222));
+console.log(getDigitsSum1(1111111111));
