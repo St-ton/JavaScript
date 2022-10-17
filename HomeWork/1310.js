@@ -16,16 +16,28 @@ let getDigitsSum = function (digit) {
   }
   return result;
 };
+console.log('--- Result ---');
+console.log(getDigitsSum(5025));
+console.log(getDigitsSum(2222));
+console.log(getDigitsSum(1111111111));
 //
-//  Вариант на уроке
+//  Продолжение на уроке
 //
-for (let j = 0; j <= 2022; j++) {
-  if (getDigitsSum(j) === 13) {
+for (let i = 0; i <= 2022; i++) {
+  if (getDigitsSum(i) === 13) {
     console.log(i);
   }
 }
-
-console.log('--- Result ---');
-console.log(getDigitsSum1(5025));
-console.log(getDigitsSum1(2222));
-console.log(getDigitsSum1(1111111111));
+let checkYears = (startYear, endYear, checkSum) => {
+  // 2 запуск с аргументами
+  let yearsArray = []; // 3 создаем  пустой массив
+  for (let i = startYear; i <= endYear; i++) {
+    // 4 перебираем все года
+    if (getDigitsSum(i) === checkSum) {
+      // 5 проверяем сумму
+      yearsArray.push(i); // 6 push массив числами
+    }
+  }
+  return yearsArray; // 7 возвращаем массив
+};
+console.log(checkYears(0, 1000, 13)); //1 вызов функции
