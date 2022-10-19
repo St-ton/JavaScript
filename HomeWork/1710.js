@@ -16,7 +16,6 @@ function camelize(str) {
   let joinSring = splitedString.join('');
   return joinSring;
 }
-
 console.log(camelize('my-short-string'));
 console.log(camelize('background-color'));
 console.log(camelize('list-style-image'));
