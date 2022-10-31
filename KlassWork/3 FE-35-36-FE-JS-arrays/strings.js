@@ -13,6 +13,7 @@
 // 	'HeLlo'[4],
 // )
 // let hello = 'Hello, World';
+
 // let helloLength = hello.length;
 // let helloUpperCase = hello.toUpperCase();
 // let index4Upper = hello[4].toUpperCase();

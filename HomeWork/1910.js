@@ -10,18 +10,14 @@
 // первый это строка 'неверный тип данных в массиве', а второй элемент
 // это общая длина массива.
 
-// let arr = ['1234567', '12345', '123456789', '123', '1'];
-let arr = [1234567, 12345678, 123456, 1234, 123];
+let arr = ['1234567', '12345', '123456789', '123', '1'];
+// let arr = [1234567, 12345678, 123456, 1234, 123];
 // let arr = ['12345678', 1234567, '123456', 1234, 123];
-
 let newArr = [];
-
 let indexString = 0;
 let maxString = '';
-
 let indexNumber = 0;
 let maxNumber = 0;
-
 let longesStrMaxNumb = function (arr) {
   // перебираю массив.
   for (let i = 0; i < arr.length; i++) {
@@ -32,11 +28,9 @@ let longesStrMaxNumb = function (arr) {
       indexNumber++; // Для типа number включаю свой счетчик
     }
   }
-
   // Массив перебрали и записали 2 счетчика - для строковых и цифровых элементов.
   // Если массив строковый, то счетчик строковый будет равен длине массива
   // Если массив цифровой, то счетчик цифровой будет равен длине массива
-
   if (indexString == arr.length) {
     // Если счетчик string равен длине массива, значит весь массив string
     for (let i = 0; i < arr.length; i++) {
@@ -65,7 +59,6 @@ let longesStrMaxNumb = function (arr) {
     return newArr;
   }
 };
-
 console.log(longesStrMaxNumb(arr));
 
 // (Необязательная задача) Напишите функцию которая будет принимать три
@@ -79,14 +72,55 @@ console.log(longesStrMaxNumb(arr));
 // console.log(result)// ['привет', js', 'java', 'script', 'redButton', 3, 65, true, false, []]
 
 let arr1 = ['привет', true, 65];
-let arr2 = [3, [], false],;
+let arr2 = [3, [], false];
 let arr3 = ['js', 'java', 'script', 'redButton'];
+let allArr = arr1.concat(arr2).concat(arr3); // общий массив из 3х масивов
+let newAllArr = [];
+let newAllArrOther = [];
 
-
-let toHardThreeOrder = function (arr1, arr2, arr3)
-{
-  
-  
+function typeArr(arr, type) {
+  for (let i = 0; i < arr.length; i++) {
+    const element = arr[i];
+    if (typeof element == type) {
+      newAllArr.push(element);
+    }
+  }
 }
 
-console.log(toHardThreeOrder(arr1, arr2, arr3);  // ['привет', js', 'java', 'script', 'redButton', 3, 65, true, false, []]
+typeArr(allArr, 'string');
+typeArr(allArr, 'number');
+typeArr(allArr, 'boolean');
+// typeArr(allArr, 'other');
+
+console.log(newAllArr);
+// console.log(newAllArrOther);
+
+// console.log(newAllArr.concat(newAllArrOther));
+
+// function conAllArr(arr1, arr2, arr3) {
+//   // Из 3 массивов собираю 1 общий
+//   for (let i = 0; i < arr1.length; i++) {
+//     AllArr.push(arr1[i]);
+//   }
+//   for (let i = 0; i < arr2.length; i++) {
+//     AllArr.push(arr2[i]);
+//   }
+//   for (let i = 0; i < arr3.length; i++) {
+//     AllArr.push(arr3[i]);
+//   }
+//   return AllArr;
+// }
+// function typeArr(arr, type) {
+//   // Из переданного в параметрах массива собираем другой новый по типу элементов, указанных в type
+//   for (let i = 0; i < arr.length; i++) {
+//     const element = arr[i];
+//     if (typeof element == type) {
+//       newArr.push(arr[i]);
+//     }
+//   }
+// }
+
+// newAllArr.push(typeArr(AllArr, 'string'));
+// newAllArr.push(typeArr(AllArr, 'number'));
+// newAllArr.push(typeArr(AllArr, 'boolean'));
+// console.log(newAllArr);
