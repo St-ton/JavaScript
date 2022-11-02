@@ -2,20 +2,20 @@
 // Подсчёт количества свойств объекта
 // Напишите функцию count(obj), которая возвращает количество свойств объекта:
 
-// let user = {
-//   name: 'John',
-//   surname: 'Smith',
-//   age: 30,
-//   email: '123@gmail.com',
-// };
-// let countKey = 0;
-// function count(object) {
-//   for (key in object) {
-//     countKey++;
-//   }
-//   return countKey;
-// }
-// console.log(count(user));
+let user = {
+  name: 'John',
+  surname: 'Smith',
+  age: 30,
+  email: '123@gmail.com',
+};
+let countKey = 0;
+function count(object) {
+  for (key in object) {
+    countKey++;
+  }
+  return countKey;
+}
+console.log(count(user));
 
 // *****     2     *****
 // Максимальная зарплата
@@ -33,13 +33,18 @@ let salaries = {
   Pete: 300,
   Mary: 250,
 };
-let maxSalary = 0;
+let maxSalary = null;
+let nameEmploy = '';
 function topSalary(salaries) {
   for (key in salaries) {
     if (maxSalary < salaries[key]) {
       maxSalary = salaries[key];
+      nameEmploy = key;
     }
   }
-  return maxSalary;
+  if (maxSalary == null) {
+    return maxSalary;
+  }
+  return nameEmploy;
 }
 console.log(topSalary(salaries));
