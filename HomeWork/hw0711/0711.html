@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body, html {
+margin: 0;
+height: 100vh;
+width: 100vw;
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; 
+      align-items: center;     
+    }
+    .btn1, .btn2 {      
+      width: 200px;
+      height: 50px;      
+      border-color: black;
+      padding: 5px 25px;
+      font-size: 24px;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 3px 3px gray;
+    }
+    .btn1:hover,.btn2:hover {
+      color:red;
+      box-shadow: none;
+       
+    }
+    .block1, .block2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; 
+      align-items: center;   
+      padding: 10px;  
+      width: 400px;
+      height: 200px;
+    }
+    .block2-show {
+      border: 50px solid black;
+      overflow: hidden;
+    }
+    .block2-hide {
+      border: 2px solid grey;
+      overflow: show;
+    }
+
+  </style>
+</head>
+<body>
+<main>
+  <div class="block1">
+  <button class ="btn1">Кнопка-1</button>
+</div>
+  <div class="block2 block2-hide">
+    <img src="https://upload.wikimedia.org/wikipedia/ru/thumb/6/66/%D0%92%D0%B5%D1%81%D1%91%D0%BB%D1%8B%D0%B5_%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B8.jpg/274px-%D0%92%D0%B5%D1%81%D1%91%D0%BB%D1%8B%D0%B5_%D0%BA%D0%B0%D1%80%D1%82%D0%B8%D0%BD%D0%BA%D0%B8.jpg" alt="">
+    <button class ="btn2">Кнопка-2</button>
+  </div>
+</main>
+  <script src="./0711.js"></script>
+</body>
+</html>
