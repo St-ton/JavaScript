@@ -15,12 +15,11 @@ sayMessage.onclick = function() {
 
 
 let clickBtn = document.querySelector('.btn2');
-let showShowHideBorder = document.querySelector('.block2');
-// let showSHideBorder = document.querySelector('.block2-hide');
+let showHideBorder = document.querySelector('.block2');
 
 clickBtn.addEventListener('click', showHideBlock); 
 
 function showHideBlock(event) {
-	showShowHideBorder.classList.toggle('block2-show'); 
-	showShowHideBorder.classList.toggle('block2-hide'); 
+	showHideBorder.classList.toggle('block2-show'); 
+	showHideBorder.classList.toggle('block2-hide'); 
 }
