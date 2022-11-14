@@ -1,4 +1,4 @@
-// 2) Изменение текста в инпуте
+// 1) Изменение текста в инпуте
 // Кнопка при нажатии на которую в инпуте меняется текст.
 
 // Нажми на кнопку рядом 
@@ -13,12 +13,17 @@ let myButton = document.querySelector('.myButton');
 let myInput = document.querySelector('#input1');
 
 myButton.addEventListener('click', changeText);
+
+
 function changeText(event) {
+// myInput.value = 'Спасибо, что нажали';
+// myButton.removeEventListener ('click', changeText);
 myInput.value = 'Спасибо, что нажали';
-myButton.removeEventListener ('click', changeText);
+setTimeout(() => myInput.value = 'Нажми на кнопку рядом', 1500);
+// myButton.removeEventListener ('click', changeText);
 };
 
-// 3) Вывод содержимого инпута
+// 2) Вывод содержимого инпута
 // Создайте input и две кнопки. 
 // В инпут вводите текст, потом называйте на первую кнопку
 // и во-вторую передавайте из содержимое input
@@ -31,13 +36,13 @@ actionButton.addEventListener('click', transferText);
 
 function transferText (event) {
   if(!input.value){
-    takeButton.textContent='fill Input!';
+    takeButton.textContent='Fill Input!';
   } else {
   takeButton.textContent=input.value;
   input.value='';
   }
 };
-// 4) Создайте input и кнопку "возвести в квадрат"
+// 3) Создайте input и кнопку "возвести в квадрат"
 // в input вводите число, а по нажатию на кнопку меняйте его на квадрат этого числа
 // реализуйте это через вспомогательную функцию возведения в квадрат
 // Number(input.value) и square(название для функции квадрат)
@@ -60,7 +65,7 @@ function toSquare(event){
     
 }
 
-// 5) По нажатию на кнопку меняется ее текст и цвет текста
+// 4) По нажатию на кнопку меняется ее текст и цвет текста
 // в зависимости от того на какую кнопку нажали
 // красный бордер и текст и зеленый бордер и текст
 
@@ -81,3 +86,7 @@ function changeToRed(event){
 
 };
 
+console.log(location.href);
+console.log(screen.width, screen.height);
+console.log(navigator.userAgent, navigator.platform);
+console.log(history);
