@@ -23,14 +23,9 @@ function unblockStatus(event) {
 // 2) Задача querySelectorAll
 // Поменяйте содержимое абзацев на их порядковый номер в коде.
 // Используйте перебор, индексы и textContent
-//
 // Заголовок, не поменяется.
-//
 // Абзац, поменяется.
-//
-//
 // Абзац, поменяется.
-//
 // Абзац, поменяется.
 
 
@@ -40,6 +35,11 @@ let changButton = document.querySelector('.changbutton');
 changButton.addEventListener('click', change);
 // changButton.addEventListener('click', unchange);
 
+// let newTextArr=[];
+// for (let elem in changText) {
+//   newTextArr.push(elem.textContent); 
+// }
+
 function change(event) {
   changText.forEach((element, i) => {
     element.textContent = i + 1;
@@ -47,7 +47,7 @@ function change(event) {
 }
 
 // function unchange(event) {
-//   changText.forEach((element, i) => {
-//     element.textContent = element;
+//   newTextArr.forEach((element, i) => {
+//     element.textContent = newTextArr[i];
 //   });
 // }
