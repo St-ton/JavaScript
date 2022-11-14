@@ -28,25 +28,25 @@ function unblockStatus(event) {
 // Абзац, поменяется.
 // Абзац, поменяется.
 
-let changText = document.querySelectorAll('.changtext');
-let changButton = document.querySelector('.changbutton');
+let changeText = document.querySelectorAll('.changetext');
+let changeButton = document.querySelector('.changebutton');
 
-let newChangText = []; 
-let flag = true;
+let changeTextArr = [];
+let flagText = true;
 
-changButton.addEventListener('click', change);
+changeButton.addEventListener('click', changeTextIndex);
 
-function change(event) {
-  if (flag == true) {
-     for (let i = 0; i < changText.length; i++) {
-      newChangText[i]=changText[i].textContent;
-      changText[i].textContent = i + 1;
+function changeTextIndex(event) {
+  if (flagText == true) {
+     for (let i = 0; i < changeText.length; i++) {
+      changeTextArr[i]=changeText[i].textContent;
+      changeText[i].textContent = i + 1;
     }
-    return flag = false;;
+    return flagText = false;
   } else {
-    for (let i = 0; i < changText.length; i++) {
-      changText[i].textContent = newChangText[i];      
+    for (let i = 0; i < changeText.length; i++) {
+      changeText[i].textContent = changeTextArr[i];
     }
-    return flag = true;;
+    return flagText = true;
   }
 }

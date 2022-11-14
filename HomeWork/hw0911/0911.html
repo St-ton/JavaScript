@@ -23,8 +23,7 @@
 
     .inputblock,
     .inputunblock,
-    .changbutton,
-    .unchangbutton {
+    .changebutton {
       padding: 5px 15px;
       margin: 10px;
       cursor: pointer;
@@ -37,15 +36,18 @@
 
     .inputblock:hover,
     .inputunblock:hover,
-    .changbutton:hover {
+    .changebutton:hover {
       box-shadow: none;
       transform: translate3d(0, 3px, -3px);
       transition: transform 0.2s;
 
     }
 
-    .inputblock,.changbutton  {
+    .inputblock{
       background-color: red;
+    }
+    .changebutton {
+      background-color:coral ;
     }
 
     .inputunblock {
@@ -71,12 +73,12 @@
   <div class="block">
     <p>***** 2 *****</p>
     <p class=>Заголовок</p>
-    <p class="changtext">Абзац 1</p>
-    <p class="changtext">Абзац 2</p>
-    <p class="changtext">Абзац 3</p>
-    <p class="changtext">Абзац 4</p>
-    <p class="changtext">Абзац 5</p>
-    <button class="changbutton">Сhange</button>
+    <p class="changetext">Абзац 1</p>
+    <p class="changetext">Абзац 2</p>
+    <p class="changetext">Абзац 3</p>
+    <p class="changetext">Абзац 4</p>
+    <p class="changetext">Абзац 5</p>
+    <button class="changebutton">Сhange</button>
   </div>
 
 </body>
