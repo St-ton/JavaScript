@@ -28,27 +28,42 @@ function unblockStatus(event) {
 // Абзац, поменяется.
 // Абзац, поменяется.
 
-
 let changText = document.querySelectorAll('.changtext');
 let changButton = document.querySelector('.changbutton');
-let unChangButton = document.querySelector('.changbutton');
+
+const newChangText = Array.from(changText);
+let flag = true;
 
 changButton.addEventListener('click', change);
-unChangButton.addEventListener('click', unchange);
-
-let newTextArr=[];
-for (let elem in changText) {
-  newTextArr.push(elem.textContent); 
-}
 
 function change(event) {
-  changText.forEach((element, i) => {
-    element.textContent = i + 1;
-  });
+  if (flag == true) {
+    for (let i = 0; i < changText.length; i++) {
+      changText[i].textContent = i + 1;
+      // console.log(newChangText[i].textContent);
+      // console.log(changText[i].textContent);
+    }
+    flag = false;
+  } else {
+    for (let i = 0; i < changText.length; i++) {
+      changText[i].textContent = newChangText[i].textContent;
+    }
+    flag = true;
+  }
 }
 
-function unchange(event) {
-  newTextArr.forEach((element, i) => {
-    element.textContent = newTextArr[i];
-  });
-}
+// function change(event) {
+//   if (flag == true) {
+//     changText.forEach((element, i, newChangText) => {
+//       newChangText[i].textContent = element.textContent;
+//       element.textContent = i + 1;
+//     });
+//     flag = false;
+//   } else {
+//     changText.forEach((element, i, newChangText) => {
+//       // element.textContent = newChangText[i].textContent;
+//       element.textContent = newChangText[i];
+//     });
+//     flag = true;
+//   }
+// }

@@ -16,6 +16,7 @@
     .block {
       display: flex;
       flex-direction: column;
+      width: 500px;
       align-items: center;
       margin-bottom: 20px;
     }
@@ -36,11 +37,10 @@
 
     .inputblock:hover,
     .inputunblock:hover,
-    .changbutton:hover,
-    .unchangbutton:hover {
+    .changbutton:hover {
       box-shadow: none;
       transform: translate3d(0, 3px, -3px);
-      transition: transform 0.15s;
+      transition: transform 0.2s;
 
     }
 
@@ -48,7 +48,7 @@
       background-color: red;
     }
 
-    .inputunblock, .unchangbutton {
+    .inputunblock {
       background-color: green
     }
    
@@ -76,12 +76,7 @@
     <p class="changtext">Абзац 3</p>
     <p class="changtext">Абзац 4</p>
     <p class="changtext">Абзац 5</p>
-
-
     <button class="changbutton">Сhange</button>
-    <button class="unchangbutton">UnСhange</button>
-
-
   </div>
 
 </body>
