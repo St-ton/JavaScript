@@ -41,7 +41,6 @@ changButton.addEventListener('click', change);
 
 function change(event) {
   if (flag == true) { 
-    newChangText = Object.assign([], changText);
      for (let i = 0; i < changText.length; i++) {
       // newChangText[i]=changText[i];
       // так тоже пробовал сначала сохранять текст из абзацев, на следующей строке он будет в другом массиве изменен на индексы, а в массиве newChangText[i] остается текст абзацев
