@@ -22,7 +22,8 @@
 
     .inputblock,
     .inputunblock,
-    .changbutton {
+    .changbutton,
+    .unchangbutton {
       padding: 5px 15px;
       margin: 10px;
       cursor: pointer;
@@ -35,24 +36,22 @@
 
     .inputblock:hover,
     .inputunblock:hover,
-    .changbutton:hover {
+    .changbutton:hover,
+    .unchangbutton:hover {
       box-shadow: none;
       transform: translate3d(0, 3px, -3px);
       transition: transform 0.15s;
 
     }
 
-    .inputblock {
+    .inputblock,.changbutton  {
       background-color: red;
     }
 
-    .inputunblock {
+    .inputunblock, .unchangbutton {
       background-color: green
     }
-    .changbutton {
-      background-color: blue;
-    }
-
+   
   </style>
 
 </head>
@@ -80,6 +79,7 @@
 
 
     <button class="changbutton">Сhange</button>
+    <button class="unchangbutton">UnСhange</button>
 
 
   </div>

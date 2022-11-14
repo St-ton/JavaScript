@@ -31,14 +31,15 @@ function unblockStatus(event) {
 
 let changText = document.querySelectorAll('.changtext');
 let changButton = document.querySelector('.changbutton');
+let unChangButton = document.querySelector('.changbutton');
 
 changButton.addEventListener('click', change);
-// changButton.addEventListener('click', unchange);
+unChangButton.addEventListener('click', unchange);
 
-// let newTextArr=[];
-// for (let elem in changText) {
-//   newTextArr.push(elem.textContent); 
-// }
+let newTextArr=[];
+for (let elem in changText) {
+  newTextArr.push(elem.textContent); 
+}
 
 function change(event) {
   changText.forEach((element, i) => {
@@ -46,8 +47,8 @@ function change(event) {
   });
 }
 
-// function unchange(event) {
-//   newTextArr.forEach((element, i) => {
-//     element.textContent = newTextArr[i];
-//   });
-// }
+function unchange(event) {
+  newTextArr.forEach((element, i) => {
+    element.textContent = newTextArr[i];
+  });
+}
