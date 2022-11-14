@@ -1,12 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=`, initial-scale=1.0">
-  <title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HomeWork_0911</title>
+  <style>
+    body {
+      margin: 0 auto;
+      width: auto;
+      background-color: cadetblue;
+    }
+
+    .block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .inputblock,
+    .inputunblock,
+    .changbutton {
+      padding: 5px 15px;
+      margin: 10px;
+      cursor: pointer;
+      color: white;
+      font-size: 18px;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 3px 3px lightgray;
+    }
+
+    .inputblock:hover,
+    .inputunblock:hover,
+    .changbutton:hover {
+      box-shadow: none;
+      transform: translate3d(0, 5px, -10px);
+      transition: transform 0.15s;
+
+    }
+
+    .inputblock {
+      background-color: red;
+    }
+
+    .inputunblock {
+      background-color: green
+    }
+    .changbutton {
+      background-color: blue;
+    }
+
+  </style>
+
 </head>
+
 <body>
-  <script src="./0911.js"></script>
+  <div class="block">
+    <p>***** 1 *****</p>
+
+    <div>
+      <button class="inputblock">Block</button>
+      <input class="input" type="text" placeholder="Какой то текст">
+      <button class="inputunblock">UnBlock</button>
+    </div>
+
+  </div>
+
+  <div class="block">
+    <p>***** 2 *****</p>
+    <p class=>Заголовок</p>
+    <p class="changtext">Абзац 1</p>
+    <p class="changtext">Абзац 2</p>
+    <p class="changtext">Абзац 3</p>
+    <p class="changtext">Абзац 4</p>
+    <p class="changtext">Абзац 5</p>
+
+
+    <button class="changbutton">Сhange</button>
+
+
+  </div>
+
 </body>
+<script src="./0911.js"></script>
+
 </html>
