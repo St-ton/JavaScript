@@ -31,17 +31,24 @@ function unblockStatus(event) {
 let changText = document.querySelectorAll('.changtext');
 let changButton = document.querySelector('.changbutton');
 
-const newChangText = Array.from(changText);
+let newChangText = Object.assign([], changText);
+// let newChangText = []; 
+// const newChangText = [...changText]; 
+// сохраняю первоначальный текст из абзацев
 let flag = true;
 
 changButton.addEventListener('click', change);
 
 function change(event) {
-  if (flag == true) {
-    for (let i = 0; i < changText.length; i++) {
+  if (flag == true) { 
+    newChangText = Object.assign([], changText);
+     for (let i = 0; i < changText.length; i++) {
+      // newChangText[i]=changText[i];
+      // так тоже пробовал сначала сохранять текст из абзацев, на следующей строке он будет в другом массиве изменен на индексы, а в массиве newChangText[i] остается текст абзацев
       changText[i].textContent = i + 1;
-      // console.log(newChangText[i].textContent);
-      // console.log(changText[i].textContent);
+      console.log(newChangText[i].textContent);
+      console.log(changText[i].textContent);
+      // но почему то сохраненный и измененный массив  одинаковы, т.е. абзацы перезаписываются в обоих массивах. Видимо неправльно склонировал
     }
     flag = false;
   } else {
