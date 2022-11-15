@@ -356,6 +356,7 @@
 
 
 // let link = document.querySelector('.link');
+// console.log(link.getAttribute('href'))
 // link.setAttribute('href', '#test'); 
 
 // 1 аргумент какое свойство объекта
@@ -379,7 +380,7 @@
 // innerHTML и outerHTML
 
 // let todoList = document.querySelector('.todo-list');
-// console.log(todoList.children)
+// console.log(todoList.children);
 
 // for (item of todoList.children) {
 // 	item.textContent = 'привет'
@@ -391,8 +392,9 @@
 // console.log(todoList.innerHTML)
 // console.log(todoList.textContent)
 // todoList.innerHTML = '<div>привет</div>'; // заменит вложенный в элемент html
+// console.log(todoList.children);
 // todoList.outerHTML = '<div>привет</div>'; // элемент html и всё вложенное в него
-
+// console.log(todoList.children);
 
 
 
