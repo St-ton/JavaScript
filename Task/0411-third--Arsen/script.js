@@ -7,20 +7,20 @@
 // объект - JS, словарь - Python
 // ключ-значение
 
-// posts - массив объектов. такая структура данных в итоге приходит с сервера
+// posts - массив объектов. такая структура данных в итоге приходит с сервера 
 // posts - посты, которые хранятся в базе данных и нам нужно отобразить их пользователю
 const posts = [
-  {
-    title: 'My first title',
-    descr: 'My first description',
-    author: 'Arsen',
-  },
-  {
-    title: 'My second title',
-    descr: 'My second description',
-    author: 'Ivan',
-  },
-];
+    {
+        title : "My first title",
+        descr : "My first description",
+        author : "Arsen" 
+    },
+    {
+        title : "My second title",
+        descr : "My second description",
+        author : "Ivan" 
+    },
+]
 
 // const title = prompt("Введите заголовок")
 // const descr = prompt("Введите описание")
@@ -38,7 +38,7 @@ const posts = [
 
 // В консоли отобразить разметку(HTML) для каждого из постов
 // 3 раза в консоли отобразить данные из массива newPosts по шаблону, используя цикл
-//
+// 
 
 // for(let i = 0; i < newPosts.length; i++) {
 //     console.log(`
@@ -56,6 +56,9 @@ const posts = [
 //     console.log(`<p class="username">${arr[i]}</p>`)
 // }
 
+
+
+
 // const user = {
 //     name : "Arsen",
 //     age : 24
@@ -66,6 +69,7 @@ const posts = [
 //     <p class="age">${user.age}</p>
 // </div>`)
 
+
 // в html не можем отобразить объекты и массивы
 // <div>${user}</div> ===> <div>[Object object]</div>
 // <div>${user.name}</div> ===> <div>Arsen</div>
@@ -73,16 +77,18 @@ const posts = [
 // let num = 10
 // console.log(`Сегодня ${num} градусов`)
 
-// Вернуть новый массив с добавленными к первому массиву данными.
+// Вернуть новый массив с добавленными к первому массиву данными. 
 // не с помощью push, а верните новый массив с добавленными данными.
 // и отобразить в консоли как таблицу.
 
 // 0 - title, 1 - descr, 2 - author
 
+
 // const arr = ["Hello", "World"]
 
 // const newArr = [...arr, "!"] // ...arr = "Hello", "World"
 // // ["Hello", "World", "!"]
+
 
 // const URL = "https://mysite.com/api"
 
@@ -102,75 +108,79 @@ const posts = [
 // `)
 //let names =  ["Arsen", "Arsen1"]. names[0] - "Arsen"
 const books = [
-  {
-    author: 'Пушкин',
-    name: 'Капитанская дочка',
-    count: '500',
-  },
-  {
-    author: 'Толстой',
-    name: 'Война и мир',
-    count: '1000',
-  },
-  {
-    author: 'Достоевский',
-    name: 'Преступление и наказание',
-    count: '700',
-  },
-];
+    {
+        author : "Пушкин",
+        name : "Капитанская дочка",
+        count : "500"
+    },
+    {
+        author : "Толстой",
+        name : "Война и мир",
+        count : "1000"
+    },
+    {
+        author : "Достоевский",
+        name : "Преступление и наказание",
+        count : "700"
+    },
+]
 
-const newAuthor = prompt('Введите автора книги'); // Author
-const newName = prompt('Введите название книги'); // Name
-const newCount = prompt('Введите количество страниц книги'); // N
+const newAuthor = prompt("Введите автора книги") // Author
+const newName = prompt("Введите название книги") // Name
+const newCount = prompt("Введите количество страниц книги") // N
 
 const newBook = {
-  author: newAuthor,
-  name: newName,
-  count: newCount,
-};
+    author: newAuthor,
+    name : newName,
+    count : newCount
+}
 
-// const newBooks = books.push(newBook). newBooks = 4.
+
+// const newBooks = books.push(newBook). newBooks = 4. 
 // const newBooks = books.concat(newBook)
-// const newBooks = [...books, newBook] // ...books - все элементы, + newBook
-const newBooks = books.concat(newBook);
+// const newBooks = [...books, newBook] // ...books - все элементы, + newBook 
+const newBooks = books.concat(newBook)  
 
-for (let i = 0; i < newBooks.length; i++) {
-  console.log(` // выведи в HTML
+for(let i = 0; i < newBooks.length; i++) {
+    console.log(` // выведи в HTML
     <div class="book">
        <p> Автор: ${newBooks[i].author} </p>
        <p> Название книги: ${newBooks[i].name} </p>
        <p> Количество страниц: ${newBooks[i].count} </p>
     </div>
-    `);
+    `)
 }
 
 // Переписать на map()
-// 1. На чем вызывать map()?
+// 1. На чем вызывать map()? 
 // book = newBooks[i]
-const logBooks = book => console.log(book.author, book.name, book.count);
+const logBooks = (book) => console.log(book.author, book.name, book.count)
 
 newBooks.map(book => {
-  `
+    (`
         <div class="book">
             <p>Автор: ${book.author}</p>
             <p>${book.name}</p>
             <p>${book.count}</p>
         </div>
-    `;
-});
+    `)
+})
 
-let arr = [1, 2, 3, 4, 5];
-let myArr = [];
+
+let arr = [1, 2, 3, 4, 5]
+let myArr = []
 const newArr = arr.forEach(num => {
-  arr.forEach(num => {
-    myArr.push(num);
-  });
-  myArr = ['elements'];
-});
+    
+    arr.forEach(num => {
+        myArr.push(num)
+    })
+    myArr =["elements"]
+   
+})
 
-console.log(myArr);
+console.log(myArr)
 
-console.log(newArr); // undefined
+console.log(newArr) // undefined
 
 // forEach - может мутировать массив при определенных обстоятельствах(исключение)
 // map - возвращает новый массив
@@ -180,9 +190,11 @@ console.log(newArr); // undefined
 
 // map - быстрее обходит элементы массива.
 
+
 // 1 итерация ---> book == {Пушкин, Капитанская дочка, 500}
 
 // console.log(newBooks)
+
 
 // console.log(books[0]) - первый объект, данные об одной книге
 // console.log(`
@@ -201,18 +213,20 @@ console.log(newArr); // undefined
 //     Количество страниц: ${books[2].count}
 // `)
 
+
 // 1. i = 0, books[0].author, books[0].name ...
 // 2. i = 1, books[1].author, books[1].name
 // 3. i = 2
 // console.log()  - сделать такой же вывод данных для второй книги
 
 // Создать новый массив, в который добавить элементы старого массива и еще одно имя Arsen 3
-// const names = ["Arsen", "Arsen 1", "Arsen 2"]
+// const names = ["Arsen", "Arsen 1", "Arsen 2"] 
 // const namesNew = ["Arsen3", "Arsen4"]
 // const newNames = names.concat(namesNew)
 
-// console.log(names) // ["Arsen", "Arsen 1", "Arsen 2"]
-// console.log(newNames) // ["Arsen", "Arsen 1", "Arsen 2", "Arsen 3", "Arsen 4"]
+// console.log(names) // ["Arsen", "Arsen 1", "Arsen 2"] 
+// console.log(newNames) // ["Arsen", "Arsen 1", "Arsen 2", "Arsen 3", "Arsen 4"] 
+
 
 // const user = {
 //     name : "Arsen",
@@ -220,7 +234,7 @@ console.log(newArr); // undefined
 //     job: "Frontend Dev"
 // }
 
-// const user1 = {...user, name : "Arsen User1"}
+// const user1 = {...user, name : "Arsen User1"} 
 // console.log(user1)
 
 // forEach(), map()
