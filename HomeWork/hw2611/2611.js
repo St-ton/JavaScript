@@ -3,41 +3,40 @@
 // В нижней части страницы должен быть расчет общей суммы.
 // Результат должен выглядеть приблизительно как на макете https://www.figma.com/file/wRonUTYoOVL3ii4meCtdzR/Untitled?node-id=1%3A2&t=5i8ANTCkEpFzMpoi-0
 
-const formElem = document.querySelector('.form');
-const total_value_elem = document.querySelector('.total_prc_cnt');
+const formProduct = document.querySelector('.form');
+const sumPriceContainer = document.querySelector('.sum-price');
 
-const productsArr = [];
+const products = [];
 
-const cardsRender = () => {
+const cardsProductContainer = () => {
   const cardContainer = document.querySelector('.cards-container');
   cardContainer.innerText = '';
 
-  productsArr.forEach(({ title, price, count }) => {
-    const card = document.createElement('div');
-    const titleElem = document.createElement('p');
-    const priceElem = document.createElement('p');
-    const countElem = document.createElement('p');
+  products.forEach(({ title, price, count }) => {
+    const cardProduct = document.createElement('div');
+    const cardTitle = document.createElement('p');
+    const cardPrice = document.createElement('p');
+    const cardCount = document.createElement('p');
 
-    const sum = price * count;
+    const sumCardPrice = price * count;
 
-    titleElem.innerText = title;
-    priceElem.innerText = price;
-    countElem.innerText = `${price} x ${count} = ${sum}`;
+    cardTitle.innerText = title;
+    cardPrice.innerText = price;
+    cardCount.innerText = `${price} x ${count} = ${sumCardPrice}`;
 
-    card.classList.add('card');
-    titleElem.classList.add('card_title');
+    cardProduct.classList.add('card');
+    cardTitle.classList.add('card-title');
 
-    card.append(titleElem, priceElem, countElem);
-    cardContainer.append(card);
+    cardProduct.append(cardTitle, cardPrice, cardCount);
+    cardContainer.append(cardProduct);
   });
 };
 
-formElem.addEventListener('submit', event => {
+formProduct.addEventListener('submit', event => {
   event.preventDefault();
-
   const { title, price, count } = event.target;
 
-  productsArr.push({
+  products.push({
     title: title.value,
     price: price.value,
     count: count.value,
@@ -47,18 +46,20 @@ formElem.addEventListener('submit', event => {
   price.value = '';
   count.value = '';
 
-  cardsRender();
-  rerender();
+  cardsProductContainer();
+  cardRerender();
 });
 
-const rerender = () => {
-  total_value_elem.innerText = '';
-  const total_price = productsArr.reduce((prev, { price, count }) => prev + price * count, 0);
-  const total_cnt = productsArr.reduce((prev, { count }) => prev + count++, 0);
-  const total_price_elem = document.createElement('p');
-  const total_count_elem = document.createElement('p');
+const cardRerender = () => {
+  sumPriceContainer.innerText = '';
 
-  total_price_elem.innerText = `Oбщая стоимость: ${total_price}`;
-  total_count_elem.innerText = `Общее количество: ${total_cnt}`;
-  total_value_elem.append(total_price_elem, total_count_elem);
+  const sumPrice = products.reduce((prev1, { price, count }) => prev1 + price * count, 0);
+  const sumCount = products.reduce((prev2, { count }) => prev2 + count, 0);
+
+  const sumPriceElem = document.createElement('p');
+  const sumCountElem = document.createElement('p');
+
+  sumPriceElem.innerText = `Oбщая стоимость: ${sumPrice}`;
+  sumCountElem.innerText = `Общее количество: ${sumCount}`;
+  sumPriceContainer.append(sumPriceElem, sumCountElem);
 };

@@ -14,53 +14,70 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 600px;
-  margin: 100px auto;
-  padding: 10px;
-  background-color: #8cc8f0;
+  max-width: 550px;
+  margin: 50px auto;
+  padding: 8px;
+  background-color: lightskyblue;
   border-radius: 10px;
 }
-
+input:focus {
+  outline: none;
+}
 .form input {
-  margin: 12px;
-  padding: 10px;
   width: 500px;
   border: none;
-  border-radius: 8px;
-  font-size: 16px;
-  background-color: #fffefe;
+  margin: 12px;
+  padding: 10px;
+  font-size: 18px;
+  background-color: white;
 }
 
 .form button {
   width: 200px;
-  height: 33px;
-  margin: 10px;
+  height: 35px;
+  margin: 5px;
   border: none;
   border-radius: 10px;
   color: white;
-  background-color: #22c7c7;
-  font-size: 16px;
-  letter-spacing: 1px;
+  background-color: green;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+
+  /* width: 700px; */
+  margin: 10px auto;
 }
 
 .card {
-  display: inline-block;
-  margin: 0 30px 30px 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-between;
+  margin: 15px;
+  padding: 10px;
   border: 1px solid black;
-  width: 170px;
-  height: 170px;
+  font-size: 14px;
+  width: 180px;
+  height: 150px;
 }
 
 .card p {
-  padding: 15px;
+  margin: 10px;
+  /* padding: 10px; */
 }
 
-.card_title {
-  font-size: 20px;
-  font-weight: 400;
+.card-title {
+  font-size: 18px;
+  font-weight: 600;
 }
 
-.total_prc_cnt p {
-  padding: 10px;
-  text-align: center;
+.sum-price p {
+  display: flex;
+  justify-content: left;
+  width: 600px;
+  margin: 10px auto;
 }
