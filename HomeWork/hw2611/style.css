@@ -10,7 +10,7 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-.form {
+.form-product {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -23,7 +23,7 @@ body {
 input:focus {
   outline: none;
 }
-.form input {
+.form-product input {
   width: 500px;
   border: none;
   margin: 12px;
@@ -32,7 +32,7 @@ input:focus {
   background-color: white;
 }
 
-.form button {
+.form-product button {
   width: 200px;
   height: 35px;
   margin: 5px;
