@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+input:focus {
+  outline: none;
+}
+.product {
+  padding: 10px;
+  margin: 10px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+}
+.add_form {
+  display: flex;
+  flex-direction: column;
+  margin: 40px auto;
+  max-width: 900px;
+  padding: 30px;
+  border: 2px solid black;
+}
+.add_form input {
+  margin: 20px 0;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+.add_form button {
+  padding: 10px;
+  align-self: end;
+  width: 100px;
+  cursor: pointer;
+  background-color: greenyellow;
+  border-radius: 5px;
+}
+.products {
+  max-width: 900px;
+  margin: 10px auto;
+}
