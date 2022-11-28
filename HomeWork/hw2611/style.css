@@ -42,13 +42,16 @@ input:focus {
   background-color: green;
   font-size: 18px;
   font-weight: 500;
+  cursor: pointer;
+}
+.form-product button:hover {
+  background-color: blue;
+  color: yellow;
 }
 
 .cards-container {
   display: flex;
   justify-content: center;
-
-  /* width: 700px; */
   margin: 10px auto;
 }
 
@@ -64,7 +67,9 @@ input:focus {
   width: 180px;
   height: 150px;
 }
-
+.card:hover {
+  background-color: lightskyblue;
+}
 .card p {
   margin: 10px;
   /* padding: 10px; */
@@ -78,6 +83,6 @@ input:focus {
 .sum-price p {
   display: flex;
   justify-content: left;
-  width: 600px;
+  width: 550px;
   margin: 10px auto;
 }

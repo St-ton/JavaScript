@@ -61,7 +61,8 @@ formProduct.addEventListener('submit', event => {
   count.value = '';
 
   // тут необходимо сделать, чтобы курсор в форме переходил на первое поле
-  // т.е. типа products.title = active
+  // т.е. типа products.title = active/autofocus
+  title.classList.add('autofocus');
 
   cardsProductContainer();
   cardRerender();
