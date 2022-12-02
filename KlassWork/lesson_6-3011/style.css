@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main {
+  background-color: antiquewhite;
+  height: 100vh;
+  padding: 60px;
+}
+.main p {
+  font-size: 15px;
+}
+.dark .main {
+  background-color: darkblue;
+  color: antiquewhite;
+}
+.change_mode {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: darkblue;
+  border: 1px solid red;
+  cursor: pointer;
+}
+.dark .change_mode {
+  background-color: antiquewhite;
+}
+.btn-plus,
+.btn-minus {
+  padding: 10px;
+}
