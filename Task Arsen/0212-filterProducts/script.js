@@ -111,9 +111,9 @@ showProducts(laptops);
 // 3. Если в поле ничего не ввели, то просто вызывать showProducts со всеми продуктами
 
 searchInput.addEventListener('input', e => {
-  const value = e.target.value;
+  const valueProducts = e.target.value;
   const filteredByValueProducts = laptops.filter(element =>
-    element.name.toLowerCase().includes(value.toLowerCase)
+    element.name.toLowerCase().includes(valueProducts.toLowerCase())
   );
   showProducts(filteredByValueProducts);
 });
@@ -125,20 +125,21 @@ categories.forEach(category => {
     const selectedCategory = e.target.textContent;
 
     //* С оператором if
-    //     if (selectedCategory === 'Все') {
-    //       showProducts(laptops);
-    //     } else {
-    //       const filteredByCategoryProducts = laptops.filter(laptop => {
-    //         return laptop.category === selectedCategory.toLowerCase();
-    //       });
-    //       showProducts(filteredByCategoryProducts);
-    //     }
 
-    //* С тернарным оператором
-    const filteredByCategoryProducts = laptops.filter(
-      laptop => laptop.category === selectedCategory.toLowerCase()
-    );
+    if (selectedCategory === 'Все') {
+      showProducts(laptops);
+    } else {
+      const filteredByCategoryProducts = laptops.filter(laptop => {
+        return laptop.category === selectedCategory.toLowerCase();
+      });
+      showProducts(filteredByCategoryProducts);
+    }
 
-    selectedCategory === 'Все' ? showProducts(laptops) : showProducts(filteredByCategoryProducts);
+    // //* С тернарным оператором
+    // const filteredByCategoryProducts = laptops.filter(
+    //   laptop => laptop.category === selectedCategory.toLowerCase()
+    // );
+
+    // selectedCategory === 'Все' ? showProducts(laptops) : showProducts(filteredByCategoryProducts);
   });
 });
