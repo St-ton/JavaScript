@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p {
+  padding: 5px;
+  color: white;
+  font-size: 18px;
+}
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  margin: 50px auto;
+  width: 550px;
+  height: 150px;
+  border-radius: 10px;
+  background-color: blue;
+}
+
+/* todo  Вариант с тегом  textarea */
+
+textarea {
+  background-color: lightblue;
+  padding: 10px;
+  margin: 10px;
+  height: 100px;
+  width: 300px;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
+textarea:focus {
+  outline: none;
+  background-color: white;
+}
+
+/* todo  Вариант с input  textarea */
+
+#textarea {
+  background-color: lightblue;
+  padding: 10px;
+  margin: 10px;
+  height: 100px;
+  width: 300px;
+  border-radius: 10px;
+  font-size: 18px;
+  border: none;
+}
+
+#textarea:focus {
+  outline: none;
+  background-color: white;
+}

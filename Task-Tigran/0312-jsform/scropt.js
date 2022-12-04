@@ -1,6 +1,6 @@
-let form = document.querySelector('.form1');
+let formSubmit = document.querySelector('.form');
 
-form.onsubmit = event => {
+formSubmit.onsubmit = event => {
   event.preventDefault();
   let formData = new FormData(event.target);
   let { login, password } = Object.fromEntries(formData);
