@@ -3,20 +3,20 @@
 
 //todo  Вариант с input textarea
 
-const myInputArea1 = document.querySelector('#textarea');
+const myInputArea_1 = document.querySelector('#textarea');
 
-myInputArea1.value = localStorage.getItem('myTextArea1');
+myInputArea_1.value = localStorage.getItem('myTextArea_1');
 
-myInputArea1.oninput = () => {
-  localStorage.setItem('myTextArea1', myInputArea1.value);
+myInputArea_1.oninput = () => {
+  localStorage.setItem('myTextArea_1', myInputArea_1.value);
 };
 
 //todo  Вариант с тегом  textarea
 
-const myInputArea2 = document.querySelector('textarea');
+const myInputArea_2 = document.querySelector('textarea');
 
-myInputArea2.value = localStorage.getItem('myTextArea2');
+myInputArea_2.value = localStorage.getItem('myTextArea_2');
 
-myInputArea2.oninput = () => {
-  localStorage.setItem('myTextArea2', myInputArea2.value);
+myInputArea_2.oninput = () => {
+  localStorage.setItem('myTextArea_2', myInputArea_2.value);
 };
