@@ -435,6 +435,17 @@ textElement.prepend(newElement);
 //...внутрь и в конец объекта
 textElement.append(newElement);
 
+//*-- before --
+////<div class="lesson__text">
+//*-- prepend --
+////   <ul>
+////     <li>Пункт1</li>
+////     <li>Пункт2</li>
+////   </ul>
+//*-- appepend --
+//// </div>;
+//* -- after --
+
 // Вставка нескольких фрагментов сразу
 textElement.append(newElement, 'Привет!');
 
@@ -446,7 +457,7 @@ textElement.append(`Живи, а работай в
 как делает это textContent. Поэтому эти методы могут
 использоваться только для вставки DOM-узлов или текстовых фрагментов. А что, если мы хотим вставить HTML именно "как HTML", со всеми тегами и прочим, как это делает innerHTML? */
 
-// todo insertAdjacentHTML (param1, param2)
+//! insertAdjacentHTML (param1, param2)
 // param1 отвечает за то, куда будет вставлен новый элемент
 // param2 содержится вставляемый элемент
 
@@ -459,17 +470,18 @@ textElement.insertAdjacentHTML(
   `<p>Живи, а работай в  
 	<span class="yellow">свободное</span> время!</p>` // param2
 );
+
 //?"beforebegin"
-// вставить html непосредственно перед textElement,
+// вставить html непосредственно перед textElement
 
 //?"afterbegin"
-// вставить html в начало textElement,
+// вставить html в начало textElement
 
 //?"beforeend"
-// вставить html в конец textElement,
+// вставить html в конец textElement
 
 //?"afterend"
-// вставить html непосредственно после textElement.
+// вставить html непосредственно после textElement
 
 //todo insertAdjacentText и insertAdjacentElement
 

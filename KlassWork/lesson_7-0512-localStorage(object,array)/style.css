@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.add_task {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #1abc9c;
+  display: flex;
+  justify-content: space-between;
+}
+input {
+  width: 70%;
+  padding: 10px;
+}
+
+input:focus {
+  outline: none;
+}
+.add_task button {
+  width: 30%;
+  padding: 10px;
+}
+.tasks p {
+  margin-left: 50px;
+  margin-bottom: 10px;
+}
