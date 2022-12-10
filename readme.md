@@ -2,7 +2,7 @@
 
 
 [1.FE-35-36-FE-JS-Intro](<https://St-ton.github.io/JavaScript/KlassWork/1.FE-35-36-FE-JS-Intro>)<br/>
-[Запись урока](<https://St-ton.github.io/JavaScript/KlassWork/1.FE-35-36-FE-JS-Intro>)
+
 
 
 [2 FE-35-36-FE-JS-Loops-Functions](<https://St-ton.github.io/JavaScript/KlassWork/2.FE-35-36-FE-JS-Loops-Functions>)
@@ -43,13 +43,13 @@
 
 
 [g6-3011-localstorage](<https://vimeo.com/776596165/65653a4c38?embedded=true&source=vimeo_logo&owner=180459310>)<br/>
-[   Praktikum](<https://St-ton.github.io/JavaScript/KlassWork/g6-3011-localstorage>)
+[Praktikum](<https://St-ton.github.io/JavaScript/KlassWork/g6-3011-localstorage-dark-light-theme>)
 
 
 [g7-0512-localStorage-Tasks-1](<https://vimeo.com/778086541/1d8f4f3c98?embedded=true&source=vimeo_logo&owner=180459310>)<br/>
 [   Praktikum](<https://St-ton.github.io/JavaScript/KlassWork/g7-0512-localStorage-Tasks-1>)<br/>
 
-[g8-0712-localStorage-Tasks-2](<https://vimeo.com/778837529/fff78c5ab6?embedded=true&source=vimeo_logo&owner=180459310>)
+[g8-0712-localStorage-Tasks-2](<https://vimeo.com/778837529/fff78c5ab6?embedded=true&source=vimeo_logo&owner=180459310>)<br/>
 [Praktikum](<https://St-ton.github.io/JavaScript/KlassWork/g8-0712-localStorage-Tasks-2>)
 
 [g9-1212-fetch] (<>) <br/>
@@ -59,13 +59,13 @@
 ###  Task - Arsen
 
 
-[1111_buttons  1111_books](<https://vimeo.com/769854723/91e2264bdd?embedded=true&source=vimeo_logo&owner=180459310>)<br/>
-[Praktikum](<https://St-ton.github.io/JavaScript/Task-Arsen/1111_buttons>)
-[Praktikum](<https://St-ton.github.io/JavaScript/Task-Arsen/1111_books>)
+[1111_buttons-changecolor  1111_books-add-deleted](<https://vimeo.com/769854723/91e2264bdd?embedded=true&source=vimeo_logo&owner=180459310>)<br/>
+[1111_buttons-changecolor-Praktikum](<https://St-ton.github.io/JavaScript/Task-Arsen/1111_buttons>)<br/>
+[1111_books-add-deleted-Praktikum](<https://St-ton.github.io/JavaScript/Task-Arsen/1111_books>)
 
 
-[1811_temp](<https://vimeo.com/772417144/22750b05fa?embedded=true&source=vimeo_logo&owner=180459310>)<br/>
-[Praktikum](<https://St-ton.github.io/JavaScript/Task-Arsen/1811_temp>)
+[1811_map-filter-sort](<https://vimeo.com/772417144/22750b05fa?embedded=true&source=vimeo_logo&owner=180459310>)<br/>
+[Praktikum](<https://St-ton.github.io/JavaScript/Task-Arsen/1811_map-filter-sort>)
 
 
 [2511_arrayMethods](<https://vimeo.com/775031455/02b04277ae?embedded=true&source=vimeo_logo&owner=180459310>)<br/>
