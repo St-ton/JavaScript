@@ -66,23 +66,19 @@
 
 // -----------------------
 
-// Напишите функцию getSum(), которая может принять неограниченное количество аргументов
-// и возвращает сумму этих аргументов
+// todo Напишите функцию getSum(), которая может принять неограниченное количество аргументов и возвращает сумму этих аргументов
 
-// пример:
-// getSum(1,2,3,4,5)
-// Результат:
-// 15
+// пример: getSum(1,2,3,4,5)
+// Результат: 15
 
 // function getSum(...numbers){
-// Решение с forEach
+
+//? Решение с forEach
 // let sum = 0
-// numbers.forEach(elem => {sum += elem})
-// Решение с методом Reduce
+// console.log(numbers.forEach(elem => {sum += elem}))
+
+//? Решение с методом Reduce
 //     console.log(numbers.reduce((sum, value) => sum + value))
 // }
 
 // getSum(1,2,3,4)
-
-// Полезные статьи:
-// https://developer.mozilla.org/ru/docs/Web/CSS/CSS_Selectors
