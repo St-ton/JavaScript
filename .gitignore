@@ -1,8 +1,12 @@
 -LeraKulikova/
+-Lesson_37-38/
+--DOC/
 
 *.docx
 *.xlsx
 *.txt
+.eslintignore
+.eslintrc
 
 # dependencies
 /node_modules
