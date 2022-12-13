@@ -111,7 +111,7 @@ showProducts(laptops);
 // 3. Если в поле ничего не ввели, то просто вызывать showProducts со всеми продуктами
 
 searchInput.addEventListener('input', e => {
-  const valueProducts = e.target.value;
+  const valueProducts = e.target.value.trim;
   const filteredByValueProducts = laptops.filter(element =>
     element.name.toLowerCase().includes(valueProducts.toLowerCase())
   );
