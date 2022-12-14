@@ -8,24 +8,26 @@ const cardsContainer = document.querySelector('.cards-container'); //конте�
 const formProduct = document.querySelector('.form-product'); //форма добавления карточек товаров
 const infoContainer = document.querySelector('.info');
 
-const write = product => localStorage.setItem('product', JSON.stringify(product)); //запись в локалсторидж
-const read = () => JSON.parse(localStorage.getItem('product')) ?? []; //чтение из локал сторадж или создание пустого массива
+const write = productsArr => localStorage.setItem('productsCards', JSON.stringify(productsArr)); //запись в локалсторидж
+const read = () => JSON.parse(localStorage.getItem('productsCards')) ?? []; //чтение из локал сторадж или создание пустого массива
 
 formProduct.addEventListener('submit', event => {
   event.preventDefault();
-  const cardTitle = event.target.cardTitle.value;
+  const cardId = new Date().getTime().toString();
+  const cardTitle = event.target.cardTitle.value.trim();
   const cardPrice = event.target.cardPrice.value;
   const cardCount = event.target.cardCount.value;
   // const { cardTitle, cardPrice, cardCount } = event.target; // деструктиризация
+  if (cardTitle != '' && cardPrice != 0 && cardCount != 0) {
+    write([...read(), { cardTitle, cardPrice, cardCount, cardId }]); //без деструктиризации
+    // write([...read(), { cardTitle.value, cardPrice.value, cardCount.value, cardId }]); // если делали выше деструктиризацию
+  } else {
+    alert('Все поля должны быть заполнены и не нулевые');
+  }
 
-  const cardId = new Date().getTime().toString();
-
-  write([...read(), { cardTitle, cardPrice, cardCount, cardId }]); //без деструктиризации
-  // write([...read(), { cardTitle.value, cardPrice.value, cardCount.value, cardId }]); // если делали выше деструктиризацию
-
-  event.target.title.value = '';
-  event.target.price.value = '';
-  event.target.count.value = '';
+  event.target.cardTitle.value = '';
+  event.target.cardPrice.value = '';
+  event.target.cardCount.value = '';
 
   cardRerender();
 });
