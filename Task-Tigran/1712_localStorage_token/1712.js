@@ -1,18 +1,21 @@
-// let obj = {
-//     token: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c',
-//     refresh: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c'
-// }
+let obj = {
+  access:
+    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c',
+  refresh:
+    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c',
+};
 
-// localStorage.setItem('token', JSON.stringify(obj))
+localStorage.setItem('token', JSON.stringify(obj));
 
-// let result =  JSON.parse(localStorage.getItem('token'))
-// console.log(result.refresh)
+let result = JSON.parse(localStorage.getItem('token'));
+console.log(result.refresh);
 
-// ---------------------------------------
-// let todos = JSON.parse(localStorage.getItem('todos'))
-// for (let elem of todos){
-//     document.createElement('div')
-// }
+//todo
+
+let todos = JSON.parse(localStorage.getItem('todos'));
+for (let elem of todos) {
+  document.createElement('div');
+}
 
 changeLocalStorage();
 

@@ -28,7 +28,7 @@ body {
   border-radius: 10px 0 0 10px;
   border: 3px solid rgb(222, 211, 234);
   font-size: 20px;
-  text-align: center;
+  /* text-align: center; */
   outline: none;
   background-color: white;
 }
