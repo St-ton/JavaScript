@@ -72,3 +72,15 @@ const createProductCard = (id, title, price, description, category, img, rating)
     products.append(container); // публикуем карточку товара в контейнер
   }
 };
+
+// будем слушать каждую карточку с товарами
+// Здесь необходимо написать функционал, который будет увеличивать размер карточки
+// const cardProduct = document.querySelector('.product-card');
+// const popupCardProduct = cardProduct.addEventListener('click', event => {
+//   popupCardProduct.classList.remove('product-card');
+//   popupCardProduct.classList.add('product-card__big');
+//   setTimeout(() => {
+//     popupCardProduct.classList.add('product-card');
+//     popupCardProduct.classList.remove('product-card__big');
+//   }, 3000);
+// });

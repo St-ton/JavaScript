@@ -48,6 +48,8 @@
 [Praktikum](<https://St-ton.github.io/JavaScript/KlassWork/>) 
 | Lection: [](<>)<br/>
 
+[Praktikum](<https://St-ton.github.io/JavaScript/KlassWork/>)
+| Lection: [](<>)<br/>
 ---
 ### Task - Arsen
 
@@ -72,6 +74,7 @@
 
 [Praktikum](<https://St-ton.github.io/JavaScript/Task-Arsen/>) 
 | Lection: [](<>)<br/>
+
 [Praktikum](<https://St-ton.github.io/JavaScript/Task-Arsen/>) 
 | Lection: [](<>)<br/>
 
@@ -96,8 +99,11 @@ Lection: [1911-map-filter-find-reduce](<https://vimeo.com/772787299/e8fa29823a?e
 [Praktikum](<https://St-ton.github.io/JavaScript/Task-Tigran/1012-array-copy-dest-map>) 
 | Lection: [1012-array-copy-dest-map](<https://vimeo.com/779896010/ef32f2b00f?embedded=true&source=vimeo_logo&owner=180459310>)<br/>
 
-[Praktikum](<https://St-ton.github.io/JavaScript/Task-Tigran/1712_>) 
+[Praktikum](<https://St-ton.github.io/JavaScript/Task-Tigran/1712_localStorage_token>)
 | Lection: [1712_](<https://vimeo.com/782082011/f44f7bd418?embedded=true&source=vimeo_logo&owner=180459310>)<br/>
 
-[Praktikum](<https://St-ton.github.io/JavaScript/Task-Tigran/>) 
+[Praktikum](<https://St-ton.github.io/JavaScript/Task-Tigran>)
+| Lection: [](<>)<br/>
+
+[Praktikum](<https://St-ton.github.io/JavaScript/Task-Tigran>)
 | Lection: [](<>)<br/>

@@ -11,10 +11,10 @@ const showProducts = () => {
   const products = localStorage.getItem('products')
     ? JSON.parse(localStorage.getItem('products'))
     : [];
-  if (products.lenght > 0)  {
-    products.forEach((product) => createProducts(product.id, product.name) 
-  };
-  };
+  if (products.lenght > 0) {
+    products.forEach(product => createProducts(product.id, product.name));
+  }
+};
 showProducts();
 
 const addProduct = e => {
@@ -52,7 +52,7 @@ const addProduct = e => {
 };
 
 //* Создание элемента
-const createProducts = (id, name) =>{
+const createProducts = (id, name) => {
   const element = document.createElement('div');
   element.setAttribute('id', id);
   element.classList.add('product');
@@ -69,8 +69,7 @@ const createProducts = (id, name) =>{
 
   //* Добавить элемент в контейнер продуктов
   productsWrapper.appendChild(element);
-
-}
+};
 
 //* Уведомление при создании или удалении
 const showNotification = () => {
@@ -103,12 +102,12 @@ const deleteProduct = () => {};
 addForm.addEventListener('submit', addProduct);
 
 /*
-<div class="product">
-      <h5 class="product-name">Название продукта</h5>
-      <div class="product-action">
-        <button class="delete-btn">Удалить</button>
-        <button class="edit-btn">Редактировать</button>
+  <div class="product">
+        <h5 class="product-name">Название продукта</h5>
+        <div class="product-action">
+          <button class="delete-btn">Удалить</button>
+          <button class="edit-btn">Редактировать</button>
+        </div>
       </div>
-    </div>
-
-    */
+  
+      */
