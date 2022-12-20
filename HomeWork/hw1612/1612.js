@@ -4,6 +4,7 @@
 const products = document.querySelector('.products'); //сюда будем выводить карточки
 const addForm = document.querySelector('.add-form'); //форма ввода id
 products.classList.remove('products'); //очищаем стили у дива, куда вывдим карточки
+const idArray = []; // будем хранить id, чтоб не выводить дубли карточек
 
 addForm.addEventListener('submit', event => {
   event.preventDefault(); // по сабмиту не делаем запрос на сервер
@@ -49,14 +50,21 @@ const createProductCard = (id, title, price, description, category, img, rating)
   priceElem.classList.add('product-price');
   imgElem.classList.add('product-img');
 
-  container.append(
-    titleElem,
-    priceElem,
-    descriptionElem,
-    categoryElem,
-    imgElem,
-    ratingElem,
-    idElem
-  );
-  products.append(container);
+  if (idArray.includes(id)) {
+    // дубли карточке не выводим на страницу
+    alert('Такой товар уже выведен на странице');
+  } else {
+    idArray.push(id); //собирам массив из опубликованных карточек
+
+    container.append(
+      titleElem,
+      priceElem,
+      descriptionElem,
+      categoryElem,
+      imgElem,
+      ratingElem,
+      idElem
+    );
+    products.append(container);
+  }
 };
