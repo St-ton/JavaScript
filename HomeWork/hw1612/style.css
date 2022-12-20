@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background: rgb(231, 231, 246);
+}
+
+.add-form {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 10px auto;
+  padding: 15px 30px;
+  background-color: #c2a698;
+  border-radius: 5px;
+  border: none;
+  background: linear-gradient(8deg, rgba(170, 58, 218, 0.1) 0%, rgba(148, 231, 233, 0.2) 100%);
+  box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+}
+
+.add-form input {
+  width: 65%;
+  padding: 10px;
+  border-radius: 10px 0 0 10px;
+  text-align: center;
+  font-size: 18px;
+  border: none;
+  outline: 3px solid rgb(222, 211, 234);
+}
+
+.add-form button {
+  width: 30%;
+  padding: 10px;
+  border: 3px solid rgb(222, 211, 234);
+  border-radius: 0 10px 10px 0;
+  font-size: 18px;
+  border: 2px solid rgb(222, 211, 234);
+  box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+}
+.add-form button:hover {
+  cursor: pointer;
+  background-color: rgb(222, 211, 234);
+  box-shadow: none;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: calc (100% - 40px);
+  gap: 10px;
+  padding: 15px 30px;
+  border-radius: 5px;
+  border: none;
+  background: linear-gradient(8deg, rgba(170, 58, 218, 0.1) 0%, rgba(148, 231, 233, 0.2) 100%);
+  box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+}
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24%;
+  padding: 10px;
+  font-size: 12px;
+  border: 3px solid rgb(222, 211, 234);
+  background-color: white;
+  border-radius: 25px 25px 0 0;
+  box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+}
+.product-card:hover {
+  cursor: pointer;
+  border: 3px solid rgb(222, 211, 234);
+  border-radius: 0;
+  border-color: transparent;
+}
+
+.product-img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+}
+.product-title {
+  color: blue;
+  font-size: 14px;
+  font-weight: 700;
+}
+.product-price {
+  color: red;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.quest {
+  text-align: center;
+  font-size: 20px;
+  color: red;
+  background-color: yellow;
+}
