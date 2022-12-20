@@ -24,27 +24,28 @@ body {
 
 .add-form input {
   width: 65%;
-  padding: 10px;
+  padding: 10px 20px;
   border-radius: 10px 0 0 10px;
+  border: 3px solid rgb(222, 211, 234);
+  font-size: 20px;
   text-align: center;
-  font-size: 18px;
-  border: none;
-  outline: 3px solid rgb(222, 211, 234);
+  outline: none;
+  background-color: white;
 }
 
 .add-form button {
-  width: 30%;
-  padding: 10px;
-  border: 3px solid rgb(222, 211, 234);
+  width: 34%;
+  padding: 10px 20px;
   border-radius: 0 10px 10px 0;
-  font-size: 18px;
-  border: 2px solid rgb(222, 211, 234);
-  box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
+  border: 3px solid rgb(222, 211, 234);
+  font-size: 20px;
+  background-color: white;
 }
+
 .add-form button:hover {
   cursor: pointer;
   background-color: rgb(222, 211, 234);
-  box-shadow: none;
+  /* box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px; */
 }
 
 .products {
@@ -67,8 +68,9 @@ body {
   padding: 10px;
   font-size: 12px;
   border: 3px solid rgb(222, 211, 234);
+  border-bottom: 8px solid rgb(222, 211, 234);
   background-color: white;
-  border-radius: 25px 25px 0 0;
+  border-radius: 20px 20px 0 0;
   box-shadow: rgb(99 99 99 / 20%) 0px 2px 8px 0px;
 }
 .product-card:hover {
