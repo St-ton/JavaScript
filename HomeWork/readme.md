@@ -7,6 +7,7 @@ HomeWork
 [HW - 26.11](<https://St-ton.github.io/JavaScript/HomeWork/hw2611>)<br/>
 [HW - 02.12](<https://St-ton.github.io/JavaScript/HomeWork/hw0212>)<br/>
 [HW - 10.12](<https://St-ton.github.io/JavaScript/HomeWork/hw1012>)<br/>
+[HW - 16.12](<https://St-ton.github.io/JavaScript/HomeWork/hw1612>)<br/>
 [HW - ](<>)<br/>
 [HW - ](<>)<br/>
 
