@@ -3,7 +3,8 @@
 
 const products = document.querySelector('.products'); //сюда будем выводить карточки
 const addForm = document.querySelector('.add-form'); //форма ввода id
-products.classList.remove('products'); //очищаем стили у дива, куда вывдим карточки
+
+products.classList.remove('products'); //очищаем стили у дива, куда выводим карточки
 const idArray = []; // будем хранить id, чтоб не выводить дубли карточек
 
 addForm.addEventListener('submit', event => {
@@ -41,22 +42,24 @@ const createProductCard = (id, title, price, description, category, img, rating)
   imgElem.setAttribute('src', img);
   imgElem.setAttribute('alt', `${titleElem}`);
 
-  container.classList.add('product-card');
-  if (products.length != 0) {
-    // добавляем класс стиля, только если запросили карточку
-    products.classList.add('products');
-  }
   titleElem.classList.add('product-title');
   priceElem.classList.add('product-price');
   imgElem.classList.add('product-img');
 
+  container.classList.add('product-card');
+  if (products.length != 0) {
+    // добавляем класс стиля контейнера товаров, только если запросили карточку
+    products.classList.add('products');
+  }
+
   if (idArray.includes(id)) {
     // дубли карточке не выводим на страницу
-    alert('Такой товар уже выведен на странице');
+    alert(`Товар с ID: ${id} уже выведен на странице!`);
   } else {
     idArray.push(id); //собирам массив из опубликованных карточек
 
     container.append(
+      //собираем в карточку товара все элементы
       titleElem,
       priceElem,
       descriptionElem,
@@ -65,6 +68,7 @@ const createProductCard = (id, title, price, description, category, img, rating)
       ratingElem,
       idElem
     );
-    products.append(container);
+
+    products.append(container); // публикуем карточку товара в контейнер
   }
 };
