@@ -46,7 +46,10 @@
 [Praktikum](<https://St-ton.github.io/JavaScript/KlassWork/g11-1912-oop-this>) 
 | Lection: [g11-1912-oop-this](<https://vimeo.com/782521907/0903670f2d?embedded=true&source=vimeo_logo&owner=180459310>)<br/>
 
-[Praktikum](<https://St-ton.github.io/JavaScript/KlassWork/>) 
+[Praktikum](<https://St-ton.github.io/JavaScript/KlassWork/g12-2112-canvas>)
+| Lection: [g12-2112-canvas](<https://vimeo.com/783268807/67aba3c119?embedded=true&source=vimeo_logo&owner=180459310>)<br/>
+
+[Praktikum](<https://St-ton.github.io/JavaScript/KlassWork/>)
 | Lection: [](<>)<br/>
 
 [Praktikum](<https://St-ton.github.io/JavaScript/KlassWork/>)

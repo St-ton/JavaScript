@@ -1,0 +1,16 @@
+/* #cvs { // если задавать ширину и высоту через стили, то растягивается картинка и деформируется
+  width: 500px;
+  height: 500px;
+  background-color: green; 
+  border: 2px solid black;
+} */
+
+html,
+body {
+  margin: 20px auto;
+}
+
+#cvs {
+  margin-left: 50px;
+  border: 2px solid black;
+}
